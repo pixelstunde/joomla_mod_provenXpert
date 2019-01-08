@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+	<name>ProvenExpert module</name>
+	<creationDate>08.01.2019</creationDate>
+	<author>Christian Friedemann</author>
+	<authorEmail>c.friedemann@pixelstun.de</authorEmail>
+	<authorUrl>https://pixelstun.de</authorUrl>
+	<copyright>2019 pixelstun.de</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>MOD_PROVENXPERT_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_provenXpert">mod_provenXpert.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>mod_provenXpert.xml</filename>
+	</files>
+
+	<languages>
+		<language tag="de-DE">language/de-DE/de-DE.mod_opening-hours.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_opening-hours.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_opening-hours.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_opening-hours.sys.ini</language>
+	</languages>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="provenXpert">https://www.example.com/mod_provenXpert.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="username"
+					type="text"
+					label="MOD_PROVENXPERT_USERNAME_LABEL"
+					description="MOD_PROVENXPERT_USERNAME_DESCRIPTION"
+				/>
+				<field
+					name="apikey"
+					type="text"
+					label="MOD_PROVENXPERT_USERNAME_LABEL"
+					description="MOD_PROVENXPERT_USERNAME_DESCRIPTION"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
